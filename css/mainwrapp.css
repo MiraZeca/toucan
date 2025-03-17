@@ -1,0 +1,53 @@
+#wrapp {
+    margin:  0 auto;
+    
+}
+#wrapp .container {
+    position: relative;
+}
+.btnHolder {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btnHolder img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    display: none;
+}
+#play {
+    left: 35%;
+}
+#reload {
+    left: 55%;
+}
+.btnHolder:hover > img {
+    display: block;
+}
+hr {
+    height: 10px !important;
+    color: #198754;
+    opacity: 1;
+    margin: 0;
+}
+@media screen and (min-width: 576px){
+    .btnHolder img {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (min-width: 768px){
+    .btnHolder img {
+        width: 40px;
+        height: 40px;
+        top: 45%;
+    }
+}
+@media screen and (min-width: 992px){
+    .btnHolder img {
+        width: 45px;
+        height: 45px;
+    }
+}

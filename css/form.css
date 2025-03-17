@@ -1,0 +1,83 @@
+
+  /* Osnovni stilovi za kontakt sekciju */
+  .contact {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px !important;
+  }
+
+  .contact h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+  }
+
+  /* Stilizacija forme */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .contact-form label {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .form-control:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+
+  .form-control.textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .contact-form button {
+    background-color: #198754;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #ffe000;
+    border: 2px solid #198754;
+    color: #198754;
+  }
+
+  /* Stilizacija poruke o uspešnom slanju */
+  .alert {
+    background-color: #198754;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .alert-success {
+    background-color: #28a745;
+  }
+
+  /* Mobilni i manji ekrani */
+  @media (max-width: 768px) {
+    .contact-form button {
+      width: 100%;
+    }
+  }
